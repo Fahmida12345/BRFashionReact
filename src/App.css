@@ -101,6 +101,7 @@ nav ul li a{
 /* trendy start */
 .title {
   text-align: center;
+  margin-bottom: 20px;
 }
 .title h1 {
   color: #0b254b;
@@ -122,6 +123,11 @@ nav ul li a{
   letter-spacing: 0.1px;
   /* margin-bottom: 10px; */
 }
+#hotsell,
+#ladies,
+#feedback {
+  background: rgba(86, 178, 128, 0.1);
+}
 #trendy,
 #hotsell,
 #men,
@@ -132,7 +138,7 @@ nav ul li a{
 }
 
 
-  #trendy{
+ #trendy{
     justify-content: center;
   }
 
@@ -149,11 +155,7 @@ nav ul li a{
   }
   .card{
     margin-top: 60px;
-    /* height: 400px ; */
     width: 22%;
-    /* border: 1px solid black; */
-    /* background: rgb(209, 205, 205);
-    padding: 10px 26px; */
     box-shadow: rgba(0, 0, 0, 0.13) 0px 13px 27px -2px;
   }
 
@@ -173,10 +175,106 @@ nav ul li a{
     color: green;
   }
 /* hotsell */
-.hotcard{
+#hotsell .hotcard{
+  background-color: #d4ebf5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#hotsell .hot-title {
+  margin-top: 50px;
+}
+#hotsell .hot-title h1 {
+  color: #1d252c;
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 46.6px;
+  letter-spacing: -0.9px;
+}
+#hotsell .hot-title p {
+  color: var(--green, #81d1f0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.8px;
+}
+#hotsell .hotcard .left{
+  margin-left: 20px;
+}
+#hotsell .hotcard .left ul {
+  margin: 20px 30px;
+  color: #000;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28.8px;
+}
+button{
+  margin-bottom: 10px;
+}
+
+#hotsell .left{
+  width: 50%;
+}
+#hotsell .right {
+  width: 50%;
   /* display: flex;
   align-items: center;
-  justify-content: space-between; */
+  justify-content: center; */
 }
-/* hotsell */
+#hotsell .right img {
+border-radius: 20px;
+ 
+}
+/* hotsell end */
+
+/* feedback start */
+
+#feedback .cards{
+  margin-top: 60px;
+  gap: 30px;
+
+}
+#feedback .card-item {
+  margin-top: 60px;
+  width: 33%;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 13px 27px -2px;
+}
+
+ .card-item {
+  margin: 0 auto;
+  display: block;
+  background: #f7f8fa;
+}
+#feedback .rating {
+  color: rgb(179, 232, 232);
+  text-align: center;
+}
+ .details {
+  text-align: center;
+}
+.card-item img{
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  /* background-color: #fff; */
+  display: block;
+}
+#feedback .details h4 {
+  color: #1d293f;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28.8px; /* 130.909% */
+}
+#feedback .details p {
+  color: #7c8087;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* feedback end */
   

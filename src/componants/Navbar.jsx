@@ -1,6 +1,6 @@
 import React from 'react'
-import { FaCartShopping, FaUser   } from "react-icons/fa6";
-import logo from '../../public/logo.png'
+import { FaCartShopping, FaUser } from "react-icons/fa6";
+import logo from '../../public/logo.png';
 
 const Navbar = () => {
   return (

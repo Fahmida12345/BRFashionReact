@@ -7,6 +7,7 @@ import Hotsell from './componants/Hotsell/Hotsell'
 import Mens from './componants/Mens/Mens'
 import Ladies from './componants/Ladies/Ladies'
 import Kid from './componants/Kid/Kid'
+import Feedback from './componants/Feedback/Feedback'
 
 
 
@@ -23,6 +24,7 @@ function App() {
         <Mens/>
         <Ladies/>
         <Kid/>
+        <Feedback/>
     </>
   )
 }

@@ -1,5 +1,7 @@
 import React from 'react'
 import Title from '../Title'
+import hotimg from '../../../public/products/hotimg.jpg'
+
 // import Trendy_card from './Trendy_card'
 
 const Hotsell = () => {
@@ -31,7 +33,7 @@ const Hotsell = () => {
             
                 </div>
                 <div className="right">
-                    <img src="" alt="" />
+                    <img src ={hotimg} alt="" />
                 </div>
 
 
