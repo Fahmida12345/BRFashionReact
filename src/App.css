@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* nav start */
+nav{
+    
+   background-color: #ebf6f1;
+    padding: 12px 0;
+}
+nav img {
+    width: 80px;
+    height: 80px;
+  }
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-decoration: none; */
+    list-style-type: none;
+    gap: 30px;
+}
+nav ul li a{
+    text-decoration: none !important;
+    font-size: 20px;
+    color: #000;
+    
+}
+.user{
+    display: flex;
+    gap: 10px;
+}
+/* nav end */
+
+#banner {
+    padding: 175px 0;
+    background: url(../../../public/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #banner .wrapper {
+    background-color: rgba(240, 248, 255, 0.32);
+  
+    width: 730px;
+    height: 349px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #banner .wrapper h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 57.6px; /* 144% */
+  }
+  #banner .wrapper p {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.6px;
+    margin-bottom: 20px;
+  }
+  button {
+    border: none;
+    outline: none;
+    color: #fff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20.645px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 8px 44px;
+    border-radius: 4px;
+    background-color: black;
+
+  }
+  
+
+/* trendy start */
+.title {
+  text-align: center;
+}
+.title h1 {
+  color: #0b254b;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 57.6px;
+  letter-spacing: -0.9px;
+  font-family: "Arvo", serif;
+}
+.title p {
+  color: #5e6e89;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27.6px;
+  letter-spacing: 0.1px;
+  /* margin-bottom: 10px; */
+}
+#trendy,
+#hotsell,
+#men,
+#ladies,
+#kid,
+#feedback {
+  padding: 70px 0;
+}
+
+
+  #trendy{
+    justify-content: center;
+  }
+
+  #trendy .flex, #men .flex, #ladies .flex, #kid .flex{
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  img{
+    width: 100%;
+  }
+.details {
+    background: #fff;
+    padding: 10px 26px;
+  }
+  .card{
+    margin-top: 60px;
+    /* height: 400px ; */
+    width: 22%;
+    /* border: 1px solid black; */
+    /* background: rgb(209, 205, 205);
+    padding: 10px 26px; */
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 13px 27px -2px;
+  }
+
+   .card .pricing {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    /* color: #56b280; */
+    /* text-align: right; */
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27.6px; 
+    margin-top: 10px;
+  }
+
+  #trendy .card .pricing span{
+    color: green;
+  }
+/* hotsell */
+.hotcard{
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+}
+/* hotsell */
+  
