@@ -1,32 +1,27 @@
-import { useState } from 'react'
-import './App.css'
-import Navbar from './componants/Navbar'
-import Banner from './componants/Banner/Banner'
-import Trendy from './componants/Trendy/Trendy'
-import Hotsell from './componants/Hotsell/Hotsell'
-import Mens from './componants/Mens/Mens'
-import Ladies from './componants/Ladies/Ladies'
-import Kid from './componants/Kid/Kid'
-import Feedback from './componants/Feedback/Feedback'
+import Navber from "./componants/Navber";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-
-
+import Home from "./componants/Home";
+import Footer from "./componants/Footer";
+import Copyright from "./componants/Copyright";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import "./Responsive.css";
 
 function App() {
-
-
   return (
     <>
-       <Navbar/>
-        <Banner/>
-        <Trendy/>
-        <Hotsell/>
-        <Mens/>
-        <Ladies/>
-        <Kid/>
-        <Feedback/>
+      <BrowserRouter>
+        <Navber />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/product/:id" />
+        </Routes>
+        <Footer />
+        <Copyright />
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
