@@ -7,6 +7,7 @@ import Copyright from "./componants/Copyright";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import "./Responsive.css";
+import Product from "./componants/Product";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Navber />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/product/:id" />
+          <Route path="/product/:itemID" element={<Product />} />
         </Routes>
         <Footer />
         <Copyright />

@@ -1,9 +1,10 @@
 import React from "react";
 import Title from "./Title";
 import TrendyCard from "./TrendyCard";
+import { allProducts } from "../API";
 
 const Kid = () => {
-  let kidsFilter = allProducts.filter((p) => p.catagory === "kids");
+  let kidsFilter = allProducts.filter((p) => p.catagory === "kid");
 
   return (
     <div id="kid">

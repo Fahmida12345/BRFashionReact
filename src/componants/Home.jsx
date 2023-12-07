@@ -6,6 +6,7 @@ import Hotsell from "./Hotsell";
 import Men from "./Men";
 import Ladies from "./Ladies";
 import Feedback from "./Feedback";
+import Kid from "./Kid";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Hotsell />
       <Men />
       <Ladies />
+      <Kid />
       <Feedback />
     </div>
   );

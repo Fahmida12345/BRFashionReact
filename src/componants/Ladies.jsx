@@ -4,7 +4,7 @@ import TrendyCard from "./TrendyCard";
 import { allProducts } from "../API";
 
 const Ladies = () => {
-  let ladiesFilter = allProducts.filter((p) => p.catagory === "ladies");
+  let ladiesFilter = allProducts.filter((p) => p.catagory === "woman");
   return (
     <section id="ladies">
       <div className="container">
