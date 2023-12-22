@@ -3,7 +3,8 @@ import Title from "./Title";
 import { allProducts } from "../API";
 import TrendyCard from "./TrendyCard";
 
-const Trendy = () => {
+const Trendy = (props) => {
+  const { addTocart } = props;
   const trendyFilter = allProducts.filter((p) => p.rank === "trendy");
   //   console.log(trendyFilter);
 
@@ -17,7 +18,7 @@ const Trendy = () => {
 
         <div className="row">
           {trendyFilter.map((item, index) => {
-            return <TrendyCard data={item} key={index} />;
+            return <TrendyCard data={item} key={index} addTocart={addTocart} />;
           })}
         </div>
       </div>

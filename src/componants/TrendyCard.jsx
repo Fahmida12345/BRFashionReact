@@ -1,11 +1,17 @@
-import React from 'react'
+import React from "react";
 import { FaCartShopping } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 const TrendyCard = (props) => {
-    const { id, itemName, img, price } = props.data;
+  const { id, itemName, img, price } = props.data;
+  const { addTocart } = props;
+
+  const handleCart = (item) => {
+    addTocart(item);
+  };
+
   return (
-    <div className=' col-sm-6 col-lg-3 col-12'>
-          <div className="card-item">
+    <div className=" col-sm-6 col-lg-3 col-12">
+      <div className="card-item">
         <Link to={`/product/${id}`}>
           <img src={img} alt={itemName} />
         </Link>
@@ -14,16 +20,15 @@ const TrendyCard = (props) => {
             {itemName}
           </Link>
           <div className="price">
-            <a href="">
+            <button onClick={() => handleCart(props.data)}>
               <FaCartShopping />
-            </a>
+            </button>
             <span>{price} BDT</span>
           </div>
         </div>
       </div>
-
     </div>
-  )
-}
+  );
+};
 
 export default TrendyCard;

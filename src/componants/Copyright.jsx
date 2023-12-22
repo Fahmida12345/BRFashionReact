@@ -6,7 +6,7 @@ const Copyright = () => {
       <div className="container">
         <div className="row">
           <div className="col-sm-6 col-lg-6 col-12">
-            <p> &copy; BR FASHION MART... All Righrs Reserved</p>
+            <p> &copy; BR FASHION MART... All Rights Reserved</p>
           </div>
           <div className="col-sm-6 col-lg-6 col-12">
             <h6 className="design">Designed by Fahmida Yeasmin❤️❤️</h6>

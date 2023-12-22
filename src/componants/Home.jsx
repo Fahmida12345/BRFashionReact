@@ -8,15 +8,16 @@ import Ladies from "./Ladies";
 import Feedback from "./Feedback";
 import Kid from "./Kid";
 
-const Home = () => {
+const Home = (props) => {
+  const { addTocart } = props;
   return (
     <div>
       <Banner />
-      <Trendy />
+      <Trendy addTocart={addTocart} />
       <Hotsell />
-      <Men />
-      <Ladies />
-      <Kid />
+      <Men addTocart={addTocart} />
+      <Ladies addTocart={addTocart} />
+      <Kid addTocart={addTocart} />
       <Feedback />
     </div>
   );

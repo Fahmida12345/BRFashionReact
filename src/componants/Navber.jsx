@@ -6,11 +6,12 @@ import { FaCartShopping, FaUserLarge } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-const Navber = () => {
+const Navber = (props) => {
+  const { cart } = props;
   return (
     <Navbar expand="lg">
       <Container>
-        <Navbar.Brand href="./">
+        <Navbar.Brand href="/">
           <img src="/logo.png" alt="" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -31,12 +32,13 @@ const Navber = () => {
           </Nav>
 
           <div class="user">
-            <a href="">
-              <FaCartShopping size={18} />
-            </a>
-            <a href="">
-              <FaUserLarge size={18} />
-            </a>
+            <Link to="/cart">
+              <FaCartShopping size={22} />
+              <span>{cart.length}</span>
+            </Link>
+            <Link to="/login">
+              <FaUserLarge size={22} />
+            </Link>
           </div>
         </Navbar.Collapse>
       </Container>

@@ -3,7 +3,8 @@ import Title from "./Title";
 import TrendyCard from "./TrendyCard";
 import { allProducts } from "../API";
 
-const Kid = () => {
+const Kid = (props) => {
+  const { addTocart } = props;
   let kidsFilter = allProducts.filter((p) => p.catagory === "kid");
 
   return (
@@ -15,7 +16,7 @@ const Kid = () => {
         />
         <div className="row">
           {kidsFilter.map((item, index) => {
-            return <TrendyCard data={item} key={index} />;
+            return <TrendyCard data={item} key={index} addTocart={addTocart} />;
           })}
         </div>
       </div>
