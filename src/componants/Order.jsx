@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { FaCcVisa } from "react-icons/fa6";
+import { FaMobileAlt } from "react-icons/fa";
+import { RiBankFill } from "react-icons/ri";
+import { HiOutlineBanknotes } from "react-icons/hi2";
 
 const Order = (props) => {
   const { cart } = props;
@@ -97,6 +101,21 @@ const Order = (props) => {
             </table>
 
             <h2 className="text-end">Grand Total: {price} BDT</h2>
+
+            <div className="payment d-flex flex-wrap justify-content-center  mt-3 fs-5s fw-bold ">
+              <div className="paymentBox text-center">
+                <FaCcVisa /> Card
+              </div>
+              <div className="paymentBox text-center">
+                <FaMobileAlt /> Mobile Banking
+              </div>
+              <div className="paymentBox text-center">
+                <RiBankFill /> Online Banking
+              </div>
+              <div className="paymentBox text-center">
+                <HiOutlineBanknotes /> COD
+              </div>
+            </div>
           </div>
         </div>
       </div>
