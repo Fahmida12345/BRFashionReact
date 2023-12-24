@@ -100,7 +100,7 @@ nav .user a span {
 
 #banner {
   padding: 175px 0;
-  background: url(../../../public/banner.jpg);
+  background: url(/public/banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
