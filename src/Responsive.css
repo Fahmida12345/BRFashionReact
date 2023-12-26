@@ -31,6 +31,15 @@
   .copyright .design {
     text-align: center !important;
   }
+  .cards {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 15px !important;
+    justify-content: center;
+  }
+  .card-item {
+    width: 46% !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   footer .com {
