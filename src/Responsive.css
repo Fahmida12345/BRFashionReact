@@ -11,6 +11,12 @@
   .copyright .design {
     text-align: center !important;
   }
+  .cards {
+    display: block !important;
+  }
+  .card-item {
+    width: 100% !important;
+  }
 }
 @media (min-width: 576px) and (max-width: 768px) {
   #banner {
